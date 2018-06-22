@@ -14,7 +14,7 @@ app.get("/campgrounds", function(req,res){
         {name: "Mountain Goat's Rest", image: "https://farm2.staticflickr.com/1424/1430198323_c26451b047.jpg"}
     ]
 
-    res.render('campgrounds');
+    res.render('campgrounds', {campgrounds: campgrounds});
 });
 
 app.listen(process.env.PORT || 3000, process.env.IP, function(){
