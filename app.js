@@ -25,7 +25,7 @@ app.post("/campgrounds", function(req,res){
     //redirect back to campgrounds page
 } );
 
-app.get("/camgrounds/new", function(req, res){
+app.get("/campgrounds/new", function(req, res){
     res.render("new.ejs");
 })
 
