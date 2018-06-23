@@ -17,6 +17,12 @@ app.get("/campgrounds", function(req,res){
     res.render('campgrounds', {campgrounds: campgrounds});
 });
 
+app.post("/campgrounds", function(req,res){
+    res.send("post route")
+    //get data from form and add to campgrounds array
+    //redirect back to campgrounds page
+} );
+
 app.listen(process.env.PORT || 3000, process.env.IP, function(){
 console.log("yelpcamp server started");
 } ) ;
