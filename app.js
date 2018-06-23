@@ -9,9 +9,9 @@ app.get("/", function(req,res){
 
 app.get("/campgrounds", function(req,res){
     var campgrounds = [
-        {name: "Salmon Creek", image: "https://pixabay.com/get/e83db40e28fd033ed1584d05fb1d4e97e07ee3d21cac104497f9c470a0e9bcb8_340.jpg"},
-        {name: "Granite Hill", image: "https://pixabay.com/get/e83db50a21f4073ed1584d05fb1d4e97e07ee3d21cac104497f9c470a0e9bcb8_340.jpg"},
-        {name: "Mountain Goat's Rest", image: "https://farm2.staticflickr.com/1424/1430198323_c26451b047.jpg"}
+        {name: "Salmon Creek", image: "https://cdn.pixabay.com/photo/2016/11/21/15/14/camping-1845906__480.jpg"},
+        {name: "Granite Hill", image: "https://farm2.staticflickr.com/1424/1430198323_c26451b047.jpg"},
+        {name: "Mountain Goat's Rest", image: "https://cdn.pixabay.com/photo/2016/11/22/23/08/adventure-1851092__480.jpg"}
     ]
 
     res.render('campgrounds', {campgrounds: campgrounds});
